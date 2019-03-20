@@ -1,0 +1,68 @@
+﻿@model FreelenceProjectDemo.Models.CoordinatorTrainingCourse
+
+@{
+    ViewBag.Title = "GetCoordinatorTCDetails";
+}
+
+<h2>GetCoordinatorTCDetails</h2>
+
+<div>
+    <h4>CoordinatorTrainingCourse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.CourseName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.CourseName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Major.MajorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Major.MajorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReportType.ReportName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReportType.ReportName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AssignmentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AssignmentDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeadlineDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeadlineDate)
+        </dd>
+        <dt>
+            Count
+        </dt>
+
+        <dd>
+           @ViewBag.Count
+        </dd>
+
+    </dl>
+</div>
